@@ -10,6 +10,7 @@ If even this the above command is not working then use this command-  namp -f 10
 6- Nmap scan for host discovery or OS- nmap -O 192.168.92.10 or you can use nmap -A 192.168.92.10
 7- If host is windows then use this command - nmap --script smb-os-discovery.nse 192.168.12.22 (this script determines the OS, computer name, domain, workgroup, time over smb protocol (ports 445 or 139).
 8- nmap command for source port manipulation, in this port is given or we use common port-  nmap -g 80 10.10.10.10
+Dont for get about -p- flag - nmap -sT -p- -A <IP ADDRESS>
 ```
 # Enumeration
 ```
