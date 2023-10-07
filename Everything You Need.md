@@ -108,6 +108,7 @@ Or use nmap ip -sV -p 5555 / Phonespolit.py
 ```
 # Wireshark
 ```
+WireShark > Statics > IPV4 STatics
 tcp.flags.syn == 1 and tcp.flags.ack == 0    (How many machines) or Go to statistics IPv4 addresses--> Source and Destination ---> Then you can apply the filter given
 tcp.flags.syn == 1   (Which machine for dos)
 http.request.method == POST   (for passwords) or click tools ---> credentials
