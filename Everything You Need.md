@@ -11,6 +11,10 @@ If even this the above command is not working then use this command-  namp -f 10
 7- If host is windows then use this command - nmap --script smb-os-discovery.nse 192.168.12.22 (this script determines the OS, computer name, domain, workgroup, time over smb protocol (ports 445 or 139).
 8- nmap command for source port manipulation, in this port is given or we use common port-  nmap -g 80 10.10.10.10
 Dont for get about -p- flag - nmap -sT -p- -A <IP ADDRESS>
+
+Handy Examples
+nmap -p 389 -T4 -A -v --script ldap-rootdse nnn.nnn.nnn.nnn/nn -Pn
+Nmap -p 80,443,8080 -sV -A <IP Address>
 ```
 # Enumeration
 ```
@@ -89,6 +93,7 @@ sqlmap -u "http://www.xyz.com/profile.aspx?id=1" --cookie="[cookie value that yo
 2- adb connect IP:5555    (Connect adb with parrot)
 3- adb shell              (Access mobile device on parrot)
 4- pwd --> ls --> cd sdcard --> ls --> cat secret.txt (If you can't find it there then go to Downloads folder using: cd downloads)
+Or use Phonespolit.py
 ```
 # Wireshark
 ```
