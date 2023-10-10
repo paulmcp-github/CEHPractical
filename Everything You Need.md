@@ -31,7 +31,11 @@ Nmap -p 80,443,8080 -sV -A <IP Address>
 ```
 1- Hide Data Using Whitespace Stegnography- snow -C -m "My swiss account number is 121212121212" -p "magic" readme.txt readme2.txt  (magic is password and your secret is stored in readme2.txt along with the content of readme.txt)
 2- To Display Hidden Data- snow -C -p "magic" readme2.txt (then it will show the content of readme2.txt content)
-3- Image Stegnography using Openstego- PRACTICE ??
+3- Image Stegnography using Openstego
+
+SNOW if it is a text file
+Open Stego if it is a picture file
+CRYPTool for a HEX fule
 ```
 #  Sniffing
 ```
