@@ -147,6 +147,6 @@ Check MySQL service running- nmap -p 3306 -iL ip.txt | grep open        (ip.txt 
 
 # Handy Links
 ...
-[www.crackstation.com](https://crackstation.net/)https://crackstation.net/
-https://hashes.com/en/decrypt/hash
+[www.crackstation.com](https://crackstation.net/)
+[https://hashes.com/en/decrypt/hash](https://hashes.com/en/decrypt/has)
 ...
