@@ -147,7 +147,14 @@ Check MySQL service running- nmap -p 3306 -iL ip.txt | grep open        (ip.txt 
 ```
 
 # Handy Links
-...
+```
 [www.crackstation.com](https://crackstation.net/)
 [https://hashes.com/en/decrypt/hash](https://hashes.com/en/decrypt/has)
-...
+```
+
+# WordPress
+```
+wpscan --url <URL> -enumerate u
+wpscan --url <URL> -u <Username> -P <path to password list> - Bruteforce password
+wpscan --url <URL> -U <path to user list> -P <path to password list> - Bruteforce password and username
+
