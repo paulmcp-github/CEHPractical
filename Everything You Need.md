@@ -130,6 +130,8 @@ tcp.flags.syn == 1   (Which machine for dos)
 http.request.method == POST   (for passwords) or click tools ---> credentials
 Also
 SOURCE IS THE ATTACKER MACHINE
+
+Filter for FTP and follow stream for password
 ```
 # Find FQDN
 ```
