@@ -183,7 +183,7 @@ Linpeas git hub – scanner to check for local escalation
 # From github
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh 
 ./linpeas.sh -a > /dev/shm/linpeas.txt
-
+CVE-2021-4043 - Pwnkit exploit! - Its a handy one!
 
 ```
 # LLMNR/NBT
@@ -197,3 +197,14 @@ john SMB hash to get the password
 Try and drop the security level after login
 Command Injection
 ```
+```
+# Common TCP Ports
+80 - HTTP
+443 - HTTPS
+8080 - Common alt port
+389 - LDAP
+5555 - Android Developer Port
+21 - FTP
+22 - SSH
+3389 - RDP
+3306 - MySQL
