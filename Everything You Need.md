@@ -184,3 +184,9 @@ curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas
 
 
 ```
+# LLMNR/NBT
+responder -I eth0
+Go on to server and try to connect to the path
+Flip back to the responder process and grab the hash
+john SMB hash to get the password
+```
