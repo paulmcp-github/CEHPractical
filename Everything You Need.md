@@ -180,9 +180,5 @@ Linpeas git hub – scanner to check for local escalation
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh 
 ./linpeas.sh -a > /dev/shm/linpeas.txt
 
-Pwnkit exploit
-Git clone
-Cd git clone
-Make
-./<complined Code>
+
 ```
