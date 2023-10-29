@@ -190,3 +190,8 @@ Go on to server and try to connect to the path
 Flip back to the responder process and grab the hash
 john SMB hash to get the password
 ```
+```
+# DVWA 
+Try and drop the security level after login
+Command Injection
+```
