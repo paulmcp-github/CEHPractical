@@ -15,7 +15,7 @@ Dont for get about -p- flag - nmap -sT -p- -A <IP ADDRESS>
 Handy Examples
 nmap -p 389 -T4 -A -v --script ldap-rootdse nnn.nnn.nnn.nnn/nn -Pn
 Nmap -p 80,443,8080 -sV -A <IP Address>
-Nmap -O -p- <IP Address>/Subnet
+Nmap -O -p- <IP Address>/Subnet (Look for strange ports in use)
 nmap -sP <IP Address>
 netdiscover -r <IP Address>
 ```
