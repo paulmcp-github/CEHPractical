@@ -199,6 +199,7 @@ Command Injection
 ```
 ```
 # Common TCP Ports
+25 - SMTP
 80 - HTTP
 443 - HTTPS
 8080 - Common alt port
