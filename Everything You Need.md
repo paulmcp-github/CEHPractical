@@ -152,8 +152,9 @@ Check MySQL service running- nmap -p 3306 -iL ip.txt | grep open        (ip.txt 
 
 # Handy Links
 ```
-[www.crackstation.com](https://crackstation.net/)
-[https://hashes.com/en/decrypt/hash](https://hashes.com/en/decrypt/has)
+Hashes - https://crackstation.net/
+Hashes - https://hashes.com/en/decrypt/has
+Detect it Easy - https://github.com/horsicq/DIE-engine/releases
 ```
 
 # WordPress
