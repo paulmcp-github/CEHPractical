@@ -207,4 +207,5 @@ Command Injection
 21 - FTP
 22 - SSH
 3389 - RDP
+139 or 445 - SMB (Remember you can use Metaspoloit to brute force)
 3306 - MySQL
