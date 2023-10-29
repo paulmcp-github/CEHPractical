@@ -16,6 +16,8 @@ Handy Examples
 nmap -p 389 -T4 -A -v --script ldap-rootdse nnn.nnn.nnn.nnn/nn -Pn
 Nmap -p 80,443,8080 -sV -A <IP Address>
 Nmap -O -p- <IP Address>/Subnet
+nmap -sP <IP Address>
+netdiscover -r <IP Address>
 ```
 # Enumeration
 ```
