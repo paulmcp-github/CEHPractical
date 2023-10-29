@@ -162,3 +162,5 @@ wpscan --url <URL> -enumerate u
 wpscan --url <URL> -u <Username> -P <path to password list> - Bruteforce password
 wpscan --url <URL> -U <path to user list> -P <path to password list> - Bruteforce password and username
 
+# Priv Esclation
+```
