@@ -18,6 +18,7 @@ Nmap -p 80,443,8080 -sV -A <IP Address>
 Nmap -O -p- <IP Address>/Subnet (Look for strange ports in use)
 nmap -sP <IP Address>
 netdiscover -r <IP Address>
+nmap -A <IPADDRESS> -oN out.txt
 ```
 # Enumeration
 ```
