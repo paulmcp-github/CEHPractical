@@ -19,6 +19,7 @@ Nmap -O -p- <IP Address>/Subnet (Look for strange ports in use)
 nmap -sP <IP Address>
 netdiscover -r <IP Address>
 nmap -A <IPADDRESS> -oN out.txt
+nmap -Pn - -script vuln <IP Address>
 ```
 # Enumeration
 ```
