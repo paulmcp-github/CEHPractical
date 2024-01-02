@@ -190,6 +190,7 @@ Linpeas git hub – scanner to check for local escalation
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh 
 ./linpeas.sh -a > /dev/shm/linpeas.txt
 CVE-2021-4043 - Pwnkit exploit! - Its a handy one!
+polkit - https://github.com/secnigma/CVE-2021-3560-Polkit-Privilege-Esclation
 
 ```
 # LLMNR/NBT
