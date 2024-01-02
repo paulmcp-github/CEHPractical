@@ -179,6 +179,7 @@ Simple Horizontal
 Nmap -sV -p 22 <IP Address>
 ssh connection ssh@ <Username>@<IP Address>
 Sudo -l – (to view priv as root)
+sudo -i
 sudo -u <user> /bin/bash
 Cd /
 Find . -name <filename>
